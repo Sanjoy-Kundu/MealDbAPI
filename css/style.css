@@ -1,0 +1,325 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #23180D;
+	height: 91px;
+	width: 100%;
+}
+
+nav {}
+
+nav ul {}
+
+nav ul li {
+	list-style: none;
+	float: left;
+	margin-right: 11px;
+	padding: 9px 16px;
+	color: black;
+
+}
+
+#active {
+	background-color: red;
+	color: white;
+	padding: 9px 16px;
+	border-radius: 5px;
+}
+
+nav ul li:hover {
+	background-color: red;
+	transition: 1s all;
+	border-radius: 5px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 17px;
+}
+
+
+main {
+	background-color: #2D2013;
+
+}
+
+/*===== banner design=======*/
+.banner {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	color: white;
+}
+
+.img-des .free-json {
+	color: orange;
+}
+
+.meal-icon-des {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	align-items: center;
+}
+
+.icon-des {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 20px;
+}
+
+
+.icon-des p {
+	color: white;
+	padding-top: 15px;
+	margin-left: 5px;
+}
+
+#horizontal-full {
+	width: 87%;
+	height: 3px;
+	color: #ffeded;
+	margin: 7px auto;
+	margin-bottom: 20px;
+}
+
+.img-des p {
+	width: 400px;
+}
+
+/*==========  paypal btn =====*/
+.paypal-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: orange;
+	width: 145px;
+	margin: 0 auto;
+	height: 34px;
+	border-radius: 7px;
+}
+
+.paypal-btn img {
+	height: 18px;
+	width: 47px;
+}
+
+.paypal-btn p {
+	margin-top: 8px;
+	margin-left: 3px;
+}
+
+/*================= div container ============*/
+.div-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+
+.child-div h5 {
+	text-align: center;
+	color: rgb(199 146 48);
+	font-weight: 100;
+}
+
+.child-div h5:hover {
+	color: orange;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.child-div-random {
+	padding-bottom: 8px;
+	width: 168px;
+	height: auto;
+}
+
+.child-div-random img {
+	width: 100%;
+	height: 100%;
+}
+
+.child-div-random h5 {
+	color: rgb(199 146 48);
+	font-size: 12px;
+	text-align: center;
+	font-weight: 100;
+	cursor: pointer;
+}
+
+.child-div-random h5:hover {
+	color: orange;
+	transition: .5s all;
+}
+
+/*=========== single display container========*/
+
+
+
+/*======== footer ========*/
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #23180D;
+	height: 91px;
+	width: 100%;
+}
+
+.footer-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 306px;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.footer-img img {
+	height: 22px;
+	width: 118px;
+}
+
+footer p {
+	color: white;
+	width: 128px;
+	margin: 0 auto;
+	padding-left: 29px;
+	font-size: 9px;
+}
+
+.footer-nav {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 19px;
+}
+
+.footer-nav li {
+	list-style: none;
+	margin-right: 14px;
+}
+
+.footer-nav li a {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-nav li a:hover {
+	color: red;
+	transition: .5s all;
+}
+
+/*========== js code ==========*/
+.single-body {
+	background-color: #c88b4e;
+}
+
+.latest-meal-body {
+	background-color: #2D2013;
+}
+
+
+
+
+/*==== media screeen=====*/
+/*========mobile======*/
+@media (max-width: 576px) {
+
+	.banner {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.banner img {
+		margin: 0 auto;
+	}
+
+	.banner .img-des h1 {
+		text-align: center;
+	}
+
+	.banner .img-des p {
+		text-align: center;
+	}
+
+
+	.meal-icon-des {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.meal-icon-des .icon-des {
+		margin: 0 auto;
+	}
+
+	.div-container {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.child-div-random {
+		margin: 0 auto;
+	}
+
+	footer {
+		flex-direction: column;
+		padding-bottom: 5px;
+	}
+}
+
+
+/*========= Medium devices (tablets, 768px and up)=======*/
+@media (max-width: 768px) {
+
+	.banner {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.banner img {
+		margin: 0 auto;
+	}
+
+	.banner p {
+		margin: 0 auto;
+	}
+
+	.banner h1 {
+		text-align: center;
+	}
+
+	.banner .img-des p {
+		text-align: center;
+	}
+
+	.meal-icon-des {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.meal-icon-des .icon-des {
+		margin: 0 auto;
+	}
+
+	.div-container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.child-div-random {
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
+/*========== Large devices (desktops, 992px and up)========*/
+@media (max-width: 992px) {}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FOOD FIND</title>
+	<!-------- css link-------->
+	<link rel="stylesheet" href="css/style.css">
+	<!------ boostrap link--------->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="images/logo-small.png" alt="">
+		</div>
+		<nav>
+			<ul>
+				<li><a href="/home" id="active">Home</a></li>
+				<li><a href="/api">Api</a></li>
+				<li><a href="/forum">Forum</a></li>
+				<li><a href="/fb">Fb</a></li>
+				<li><a href="/tw">tw</a></li>
+				<li><input type="text" name="" id=""></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<article class="banner">
+
+			<img src="images/banner-img.png" alt="">
+			<div class="img-des">
+				<h1>Welcome to TheMealDB</h1>
+				<p>Welcome to TheMealDB: An open, crowd-sourced database of Recipes from around the world.
+					We also offer a free <span class="free-json">JSON API</span> for anyone wanting to use it, with
+					additional features for
+					subscribers.</p>
+				<div class="paypal-btn">
+					<img src="images/paupal-logo.svg" alt="">
+					<p>subscribers</p>
+				</div>
+				<p>Click to Support $2 per month (cancel anytime)
+					Currently 750 supporters</p>
+			</div>
+			<img src="images/banner-img.png" alt="">
+
+		</article>
+		<article>
+			<hr id="horizontal-full">
+			<!------------ search implement-------->
+			<div class="input-group mb-3 w-50 mx-auto">
+				<input type="text" class="form-control" placeholder="Search Food" aria-label="Recipient's username"
+					aria-describedby="basic-addon2" id="input-field">
+				<button type="button" class="btn btn-outline-primary" onclick="searchFood()">Search</button>
+			</div>
+			<div class="meal-icon-des">
+				<div class="icon-des">
+					<img src="images/search-icon-1.png" alt="">
+					<p>Total Meals: 283</p>
+				</div>
+				<div class="icon-des">
+					<img src="images/search-icon-2.png" alt="">
+					<p>Total Ingredients: 574</p>
+				</div>
+				<div class="icon-des">
+					<img src="images/search-icon-3.png" alt="">
+					<p>Images: 283</p>
+				</div>
+			</div>
+			<hr id="horizontal-full">
+		</article>
+		<!---------- search meal-------->
+		<article class="mb-4">
+			<div div class="div-container container" id="single-display-card">
+			</div>
+		</article>
+
+		<!------- display meal------->
+		<article>
+			<div class="div-container container" id="display-result"></div>
+
+		</article>
+
+
+		<!------- latest meal------>
+		<article class="mt-5 mb-5">
+			<h2 class="text-center text-white">Latest Meal</h2>
+			<div class="div-container container" id="latest-meal"></div>
+		</article>
+		<hr id="horizontal-full">
+
+		<!---------- Popular Ingredients-------->
+		<article>
+			<h2 class="text-center text-white">Popular Ingredients</h2>
+			<div class="div-container container" id="popular-ingredients"></div>
+		</article>
+		<hr id="horizontal-full">
+
+		<!------------- Random Meals------------->
+		<article>
+			<h2 class="text-center text-white">Random Meals</h2>
+			<div class="div-container container" id="random-meals"></div>
+		</article>
+		<hr id="horizontal-full">
+
+		<article>
+			<h2 class="text-center text-white">Random Ingredients</h2>
+			<div class="row row-cols-1 row-cols-md-4 g-4 container mx-auto pt-5 pb-5" id="random-itegrant"></div>
+		</article>
+
+	</main>
+
+	<footer>
+		<div class="text-1">
+			<p>© 2022 TheMealDB
+				Proudly built in the UK </p>
+		</div>
+		<div class="footer-img">
+			<img src="images/footer-img.png" alt="">
+			<img src="images/footer-img-2.png" alt="">
+			<img src="images/footer-img-3.png" alt="">
+		</div>
+
+		<div class="footer-nav">
+
+			<li><a href="#">About</a></li>
+			<li><a href="#">Fag</a></li>
+			<li><a href="#">Contact</a></li>
+
+		</div>
+	</footer>
+
+	<!---- js link------>
+	<script src="js/app.js"></script>
+	<!------- boostrap js---->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
